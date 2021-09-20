@@ -1,5 +1,6 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken');
+const Login = require('../models/loginModel')
 
 const validateLoginInput = () => {
     app.post('/', async (req, res) => {

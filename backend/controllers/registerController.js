@@ -1,7 +1,9 @@
 const bcrypt = require('bcrypt')
+// const RegisterModel = require('../models/registerModel')
+const app = express()
 
-const validateRegisterInput = (req, res) => {
-    app.post( async (req, res) => {
+const registerController = (req, res) => {
+    app.post("/register", async (req, res) => {
         const { email, password } = req.body;
 
         // Hash password
@@ -22,4 +24,4 @@ const validateRegisterInput = (req, res) => {
     })
 }
 
-module.exports = validateRegisterInput;
+module.exports = registerController;

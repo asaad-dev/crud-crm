@@ -14,6 +14,6 @@ const ContactsSchema = new mongoose.Schema({
     category: Number,
 })
 
-const Contacts = mongoose.model('Conacts', ContactsSchema)
+const Contacts = mongoose.model('Contacts', ContactsSchema)
 
 module.exports = Contacts;

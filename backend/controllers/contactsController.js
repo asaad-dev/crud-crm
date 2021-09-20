@@ -1,13 +1,4 @@
-const contacts = [
-    {
-        "_id": ObjectId("517eb961c555361604ec9a4f"),
-        "userId": ObjectId("60d1cfe9a22a623d4b8b2a58"), // identique à l'utilisateur du dessus
-        "name": "John Doe",
-        "email": "john-doe@gmail.com",
-        "description": "Good client, comes often. A bit picky with prices though.",
-        "category": "3"
-    }
-]
+const Contacts = require('../models/contactsModel')
 
 // Read
 const getAllContacts = (req, res) => {
